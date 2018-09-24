@@ -1,0 +1,6 @@
+assets_vfsdata.go
+assets/
+.cache/
+dist/
+node_modules/
+vendor/*/

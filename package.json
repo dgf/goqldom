@@ -1,0 +1,18 @@
+{
+  "name": "goqldom",
+  "version": "1.0.0",
+  "description": "GraphQL based DOM selections.",
+  "repository": "https://github.com/dgf/goqldom",
+  "author": "Danny Gräf",
+  "license": "MIT",
+  "dependencies": {
+    "graphiql": "^0.12.0",
+    "graphql": "^14.0.2",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.1"
+  }
+}
