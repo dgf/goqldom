@@ -6,13 +6,9 @@
   "author": "Danny Gräf",
   "license": "MIT",
   "dependencies": {
-    "graphiql": "^0.12.0",
-    "graphql": "^14.0.2",
-    "isomorphic-fetch": "^2.2.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.5.2"
+    "graphql-playground-react": "^1.7.4"
   },
   "devDependencies": {
-    "cssnano": "^4.1.1"
+    "cssnano": "^4.1.3"
   }
 }

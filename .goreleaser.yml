@@ -1,7 +1,8 @@
 before:
   hooks:
-  - govendor sync
+  - yarn install
   - parcel build -d assets index.html
+  - govendor sync
 builds:
 - main: ./service/main.go
   env:

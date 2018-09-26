@@ -7,29 +7,35 @@ GraphQL based HTTP service for DOM selections.
 install [Yarn](https://yarnpkg.com) and [Parcel](https://parceljs.org)
 
 ```shell
-# yarn global add parcel-bundler
+yarn global add parcel-bundler
 ```
 
 install frontend dependencies
 
 ```shell
-$ yarn install
+yarn install
 ```
 
 install [Govendor](https://github.com/kardianos/govendor) and [GoReleaser](https://goreleaser.com)
 
 ```shell
-$ go get -u github.com/kardianos/govendor
-$ go get -u github.com/goreleaser/goreleaser
+go get -u github.com/kardianos/govendor
+go get -u github.com/goreleaser/goreleaser
 ```
 
 synchronize service dependencies
 
 ```shell
-$ govendor sync
+govendor sync
 ```
 
 ## build frontend assets (for every frontend change)
+
+serve it on the fly
+
+```shell
+parcel serve -d foo index.html
+```
 
 run Parcel to build the static assets
 
