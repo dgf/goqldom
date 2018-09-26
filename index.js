@@ -25,7 +25,7 @@ const golangQuery = `{
 
 window.addEventListener('load', function () {
     GraphQLPlayground.init(document.getElementById('root'), {
-        endpoint: "https://api.graph.cool/simple/v1/swapi",
+        endpoint: document.location + "graphql",
         workspaceName: "goqldom service",
         settings: {
             'general.betaUpdates': false,
@@ -40,11 +40,11 @@ window.addEventListener('load', function () {
         tabs: [
             {
                 name: "Service version",
-                endpoint: "http://localhost:8080/graphql",
+                endpoint: document.location + "graphql",
                 query: versionQuery
             }, {
                 name: "Golang blog articles",
-                endpoint: "http://localhost:8080/graphql",
+                endpoint: document.location + "graphql",
                 query: golangQuery
             }
         ]

@@ -3,6 +3,7 @@ before:
   - yarn install
   - parcel build -d assets index.html
   - govendor sync
+  - go run service/vfs/generate.go
 builds:
 - main: ./service/main.go
   env:
@@ -10,11 +11,17 @@ builds:
   goos:
   - linux
   - darwin
+  goarch:
+  - amd64
+- main: ./service/main.go
+  env:
+  - CGO_ENABLED=0
+  goos:
   - windows
   goarch:
   - amd64
-  hooks:
-    pre: go run service/vfs/generate.go
+  ldflags:
+  - -s -w -H windowsgui -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}}
 archive:
   files:
   - LICENSE

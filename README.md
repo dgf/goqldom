@@ -2,7 +2,9 @@
 
 GraphQL based HTTP service for DOM selections.
 
-## Requirements (once to build)
+## Development
+
+### Requirements (once to build)
 
 install [Yarn](https://yarnpkg.com) and [Parcel](https://parceljs.org)
 
@@ -29,7 +31,7 @@ synchronize service dependencies
 govendor sync
 ```
 
-## build frontend assets (for every frontend change)
+### Build frontend assets (for every frontend change)
 
 serve it on the fly
 
@@ -40,23 +42,27 @@ parcel serve -d foo index.html
 run Parcel to build the static assets
 
 ```shell
-$ parcel build -d assets index.html
+parcel build -d assets index.html
 ```
 
 build the virtual file system `assets_vfsdata.go` of the static assets
 
 ```shell
-$ go run service/vfs/generate.go
+go run service/vfs/generate.go
 ```
 
-## Run the service
+### Run the service
+
+just run the service main while developing
 
 ```shell
-$ go run service/main.go
+go run service/main.go
 ```
 
-## Test the release build
+### Test the release build
+
+build the distribution without a tag
 
 ```shell
-$ ~/go/bin/goreleaser --skip-publish --snapshot --rm-dist
+goreleaser --skip-publish --snapshot --rm-dist
 ```

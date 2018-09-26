@@ -87,6 +87,12 @@
 			"revisionTime": "2018-09-22T16:22:46Z"
 		},
 		{
+			"checksumSHA1": "qXgkdePaufvVUkghGhvGbezMZSQ=",
+			"path": "github.com/pkg/browser",
+			"revision": "0a3d74bf9ce488f035cf5bc36f753a711bc74334",
+			"revisionTime": "2018-09-16T01:17:32Z"
+		},
+		{
 			"checksumSHA1": "fhngc51BJ8gGzM5b8BpSuWjCLao=",
 			"path": "github.com/shurcooL/httpfs/vfsutil",
 			"revision": "809beceb23714880abc4a382a00c05f89d13b1cc",
